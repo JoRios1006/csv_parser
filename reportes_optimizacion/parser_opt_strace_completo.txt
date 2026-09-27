@@ -1,0 +1,24 @@
+execve("./parser_opt", ["./parser_opt"], 0x7fffe364b5b0 /* 65 vars */) = 0
+brk(NULL)                               = 0x16b17000
+brk(0x16b17d40)                         = 0x16b17d40
+arch_prctl(ARCH_SET_FS, 0x16b173c0)     = 0
+set_tid_address(0x16b17690)             = 33487
+set_robust_list(0x16b176a0, 24)         = 0
+rseq(0x16b17340, 0x20, 0, 0x53053053)   = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=9788*1024, rlim_max=RLIM64_INFINITY}) = 0
+readlinkat(AT_FDCWD, "/proc/self/exe", "/home/jor/projects/tplogica/pars"..., 4096) = 38
+getrandom("\x95\xf0\xae\x12\x53\x00\xcc\x89", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x16b17d40
+brk(0x16b38d40)                         = 0x16b38d40
+brk(0x16b39000)                         = 0x16b39000
+mprotect(0x49f000, 20480, PROT_READ)    = 0
+openat(AT_FDCWD, "movimientos.csv", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=506, ...}) = 0
+mmap(NULL, 506, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f85a640d000
+madvise(0x7f85a640d000, 506, MADV_SEQUENTIAL) = 0
+madvise(0x7f85a640d000, 506, MADV_WILLNEED) = 0
+write(1, "El producto 'Alquiler y Servicio"..., 315) = 315
+munmap(0x7f85a640d000, 506)             = 0
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
