@@ -1,4 +1,3 @@
-/* STREAMING_CHUNK:Importando librerias y definiendo estructuras... */
 #include <fcntl.h>
 #include <stdalign.h>
 #include <stdio.h>
@@ -17,7 +16,6 @@ typedef struct {
   size_t offset;
 } MemoriaCSV;
 
-/* STREAMING_CHUNK:Configurando funciones mmap y limpieza... */
 // ==========================================
 // 1. GESTIÓN DE ARCHIVOS Y MEMORIA
 // ==========================================
@@ -51,7 +49,6 @@ static inline void cleanup_file(char *csv_data, size_t size, int fd) {
   if (fd != -1) close(fd);
 }
 
-/* STREAMING_CHUNK:Definiendo parseadores Zero-Copy... */
 // ==========================================
 // 2. PARSEO ZERO-COPY
 // ==========================================
@@ -109,7 +106,6 @@ static inline int find_column_index(char *headers[], int num_cols, const char *t
   return -1;
 }
 
-/* STREAMING_CHUNK:Creando manejador rapido de Strings de salida... */
 // ==========================================
 // 3. SALIDA OPTIMIZADA (Sustituto de snprintf)
 // ==========================================
@@ -149,7 +145,6 @@ static inline void format_and_append_product(MemoriaCSV *mem, const char *nombre
   append_to_buffer(mem, p3, 1);
 }
 
-/* STREAMING_CHUNK:Implementando bloque principal (Linear flow)... */
 // ==========================================
 // 4. FLUJO PRINCIPAL LINEAL
 // ==========================================
