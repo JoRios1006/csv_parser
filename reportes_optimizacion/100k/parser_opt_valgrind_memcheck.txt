@@ -1,0 +1,37 @@
+==83476== Memcheck, a memory error detector
+==83476== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==83476== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==83476== Command: ./parser_opt
+==83476== Parent PID: 83234
+==83476== 
+==83476== Conditional jump or move depends on uninitialised value(s)
+==83476==    at 0x42B7A4: __strcspn_sse42 (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x456758: strsep (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x434D9E: fillin_rpath.isra.0 (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x43546C: _dl_init_paths (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x418257: _dl_non_dynamic_init (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x419534: __libc_init_first (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x4042DC: (below main) (in /home/jor/linkdin/parser_opt)
+==83476==  Uninitialised value was created by a stack allocation
+==83476==    at 0x4353E8: _dl_init_paths (in /home/jor/linkdin/parser_opt)
+==83476== 
+==83476== Conditional jump or move depends on uninitialised value(s)
+==83476==    at 0x42B782: __strcspn_sse42 (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x456758: strsep (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x434D9E: fillin_rpath.isra.0 (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x43546C: _dl_init_paths (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x418257: _dl_non_dynamic_init (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x419534: __libc_init_first (in /home/jor/linkdin/parser_opt)
+==83476==    by 0x4042DC: (below main) (in /home/jor/linkdin/parser_opt)
+==83476==  Uninitialised value was created by a stack allocation
+==83476==    at 0x4353E8: _dl_init_paths (in /home/jor/linkdin/parser_opt)
+==83476== 
+==83476== 
+==83476== HEAP SUMMARY:
+==83476==     in use at exit: 0 bytes in 0 blocks
+==83476==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==83476== 
+==83476== All heap blocks were freed -- no leaks are possible
+==83476== 
+==83476== For lists of detected and suppressed errors, rerun with: -s
+==83476== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

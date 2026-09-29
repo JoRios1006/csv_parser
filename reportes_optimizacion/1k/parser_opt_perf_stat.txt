@@ -1,0 +1,20 @@
+# started on Tue Sep 29 01:45:32 2026
+
+
+ Performance counter stats for './parser_opt' (15 runs):
+
+              1.04 msec task-clock                       #    0.365 CPUs utilized               ( +-  1.63% )
+           3111502      cycles                           #    2.993 GHz                         ( +-  1.68% )
+           2875944      instructions                     #    0.92  insn per cycle              ( +-  0.06% )
+             17887      cache-references                 #   17.207 M/sec                       ( +-  2.25% )
+              9424      cache-misses                     #   52.69% of all cache refs           ( +-  1.19% )
+            758171      branches                         #  729.360 M/sec                       ( +-  0.04% )
+     <not counted>      branch-misses                                                           (0.00%)
+                33      page-faults                      #   31.746 K/sec                       ( +-  0.28% )
+
+          0.002850 +- 0.000237 seconds time elapsed  ( +-  8.31% )
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog

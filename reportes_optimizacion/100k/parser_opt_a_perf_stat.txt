@@ -1,0 +1,16 @@
+# started on Tue Sep 29 01:45:40 2026
+
+
+ Performance counter stats for './parser_opt_a' (15 runs):
+
+             13.04 msec task-clock                       #    0.949 CPUs utilized               ( +-  0.67% )
+          41414897      cycles                           #    3.175 GHz                         ( +-  0.51% )  (39.08%)
+          80308965      instructions                     #    1.94  insn per cycle              ( +-  0.57% )  (69.82%)
+            303494      cache-references                 #   23.270 M/sec                       ( +-  2.76% )  (89.52%)
+            169109      cache-misses                     #   55.72% of all cache refs           ( +-  0.51% )
+          22372842      branches                         #    1.715 G/sec                       ( +-  0.00% )
+            227520      branch-misses                    #    1.02% of all branches             ( +-  1.83% )  (71.40%)
+                29      page-faults                      #    2.224 K/sec                       ( +-  0.41% )
+
+         0.0137391 +- 0.0000999 seconds time elapsed  ( +-  0.73% )
+

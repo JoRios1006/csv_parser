@@ -1,0 +1,37 @@
+execve("./parser_opt", ["./parser_opt"], 0x7fff1d43b550 /* 57 vars */) = 0
+brk(NULL)                               = 0x33157000
+brk(0x33157d40)                         = 0x33157d40
+arch_prctl(ARCH_SET_FS, 0x331573c0)     = 0
+set_tid_address(0x33157690)             = 83361
+set_robust_list(0x331576a0, 24)         = 0
+rseq(0x33157340, 0x20, 0, 0x53053053)   = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+readlinkat(AT_FDCWD, "/proc/self/exe", "/home/jor/linkdin/parser_opt", 4096) = 28
+getrandom("\xec\x1c\x9c\xe2\x77\x82\xec\x29", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x33157d40
+brk(0x33178d40)                         = 0x33178d40
+brk(0x33179000)                         = 0x33179000
+mprotect(0x49f000, 20480, PROT_READ)    = 0
+openat(AT_FDCWD, "movimientos.csv", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=71262, ...}) = 0
+mmap(NULL, 71262, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f53216ef000
+madvise(0x7f53216ef000, 71262, MADV_SEQUENTIAL) = 0
+madvise(0x7f53216ef000, 71262, MADV_WILLNEED) = 0
+write(1, "El producto 'Transporte' cuesta:"..., 3031) = 3031
+write(1, "El producto 'Educacion' cuesta: "..., 3031) = 3031
+write(1, "El producto 'Educacion' cuesta: "..., 3059) = 3059
+write(1, "El producto 'Alquiler y Servicio"..., 3034) = 3034
+write(1, "El producto 'Indumentaria' cuest"..., 3028) = 3028
+write(1, "El producto 'Educacion' cuesta: "..., 3037) = 3037
+write(1, "El producto 'Entretenimiento' cu"..., 3043) = 3043
+write(1, "El producto 'Impuestos' cuesta: "..., 3057) = 3057
+write(1, "El producto 'Alimentacion' cuest"..., 3051) = 3051
+write(1, "El producto 'Entretenimiento' cu"..., 3047) = 3047
+write(1, "El producto 'Indumentaria' cuest"..., 3069) = 3069
+write(1, "El producto 'Impuestos' cuesta: "..., 3062) = 3062
+write(1, "El producto 'Alquiler y Servicio"..., 3041) = 3041
+write(1, "El producto 'Indumentaria' cuest"..., 2144) = 2144
+munmap(0x7f53216ef000, 71262)           = 0
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

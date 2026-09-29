@@ -1,0 +1,40 @@
+=== Fecha ===
+Tue Sep 29 01:44:54 -03 2026
+
+=== Kernel / OS ===
+Linux JorDebian 6.12.107+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+
+=== CPU ===
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
+CPU(s) scaling MHz:                      95%
+CPU max MHz:                             3300.0000
+CPU min MHz:                             1200.0000
+NUMA node0 CPU(s):                       0-3
+
+=== Gobernador de frecuencia (cpu0) ===
+schedutil
+(sugerencia: 'sudo cpupower frequency-set -g performance' reduce ruido entre corridas)
+
+=== NMI watchdog ===
+1
+(si es '1', branch-misses puede salir '<not counted>'; deshabilitarlo requiere root:
+ sudo sh -c 'echo 0 > /proc/sys/kernel/nmi_watchdog')
+
+=== Compilador ===
+gcc (Debian 14.2.0-19) 14.2.0
+
+=== Git ===
+commit: 4b0755b1803624e7c50115753f1a0c76c4d34d4c
+ M bench.sh
+ M csv_a.c
+ M movimientos.csv
+ D reportes_optimizacion/parser_opt_a_perf_stat.txt
+ D reportes_optimizacion/parser_opt_a_strace_completo.txt
+
+=== Pinning ===
+taskset disponible, corriendo en core 3
+
+=== perf stat: repeticiones ===
+15
